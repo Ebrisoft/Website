@@ -1,1 +1,57 @@
-<h1>I am the index</h1>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6461FF">
+    <title>Habitat</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="javascript/switchWord.js"></script>
+    <script src="javascript/copyrightDate.js"></script>
+
+  </head>
+  <body>
+    <nav>
+        <div class="ebrisoft-logo">
+            <h3>HABITAT</h3>
+        </div>
+        <div class="links">
+            <div class="nav-item">
+                <a href="http://habitat.ebrisoft.com/">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="pages/details.html">Details</a>
+            </div>
+            <div class="nav-item">
+                <a href="pages/motivation.html">Motivations</a>
+            </div>
+        </div>
+    </nav>
+    <section class="tagline-container">
+        <div class="icon-container">
+            <img id="habitat-icon" src="assets/app-icon.png" alt="Habitat App Icon">
+        </div>
+        <div class="tagline">
+            <p>The all in one solution to rental</p>
+            <p><span id="word-changer" class="bold">communication</span></p>
+        </div>
+    </section>
+    <section class="download-container">
+        <div class="download-button">
+            <p>Download coming soon!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy Ebrisoft <span id="copyrightYear">2020</span></p>
+    </footer>
+    <script>
+        switchText();
+        setInterval(switchText, 3000);
+
+        setYear();
+    </script>
+  </body>
+</html>
