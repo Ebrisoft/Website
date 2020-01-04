@@ -1,3 +1,12 @@
+.heading {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.heading h2 {
+    font-weight: 300;
+}
+
 .stakeholder-values {
     width: 80%;
     max-width: 1300px;
@@ -54,7 +63,8 @@
     flex: 1;
     min-width: 36%;
     padding: 40px;
-    color: #131313;
+    /*color: #131313;*/
+    color:white;
     margin: 100px 25px 0 25px;
 }
 
@@ -62,7 +72,7 @@
     padding: 0;
     margin: 0 0 30px 0;
     text-align: center;
-    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .values h4 {
