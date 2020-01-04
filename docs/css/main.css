@@ -128,7 +128,7 @@ p {
     display: block;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 885px) {
     .navbar {
         display: flex;
         justify-content: space-between;
