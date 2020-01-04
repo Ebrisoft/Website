@@ -95,7 +95,7 @@ p {
     transform: scaleX(1);
 }
 
-.active-nav a:before {
+.main-nav>li >a.active-nav:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
