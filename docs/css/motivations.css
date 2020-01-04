@@ -1,79 +1,79 @@
-
 .motivations {
-    min-height: 300px;
-    max-width: 1300px;
-    display: flex;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  min-height: 300px;
+  max-width: 1300px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .paper {
-    flex-grow: 1;
-    height: 100%;
-    width: 100%;
-    max-width: 80%;
-    min-width: 180px;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  max-width: 80%;
+  min-width: 180px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
 }
 
 .paper h3 {
-    padding:0;
-    margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 .paper p {
-    color: rgba(255,255,255,0.7);
-    padding: 0;
-    margin:0;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0;
+  margin: 0;
 }
 
 .left-align {
-    display: inline-block;
-    text-align: left;
-    height: 100%;
+  display: inline-block;
+  text-align: left;
+  height: 100%;
 }
 
 .paper a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .view-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    width: 100px;
-    padding: 6px 20px;
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 7px;
-    text-align: center;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 100px;
+  padding: 6px 20px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 7px;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .view-button:hover {
-    background: rgba(255,255,255,0.3);
-    border-style: solid; border-width: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width: 2px;
 }
 
 #external-link-icon {
-    max-height: 15px;
-    max-width: 15px;
+  max-height: 15px;
+  max-width: 15px;
 }
 
 @media(max-width: 680px) {
-    .paper {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 20px 0;
-    }
+  .paper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+  }
 }

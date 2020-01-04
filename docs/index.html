@@ -1,70 +1,74 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#6461FF">
-    <title>Habitat</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6461FF">
+  <title>Habitat</title>
 
-    <script src="javascript/switchWord.js"></script>
-    <script src="javascript/copyrightDate.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  </head>
-  <body>
-    <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fa fa-bars"></i>
-        </span>
-        <a href="#" class="logo">HABITAT</a>
-        <ul class="main-nav" id="js-menu">
-            <li>
-                <a class="nav-links active-nav" href="http://habitat.ebrisoft.com/">Home</a>
-            </li>
-            <li>
-                <a class="nav-links" href="pages/details.html">Details</a>
-            </li>
-            <li>
-                <a class="nav-links" href="pages/motivations.html">Motivations</a>
-            </li>
-            <li >
-                <a id="press-kit-link" target="_blank" class="nav-links" href="pages/presskit.html">Press Kit<img id="external-link-icon" src="assets/external-link.svg" alt=""></a>
-            </li>
-        </ul>
-    </nav>
+  <script src="javascript/switchWord.js"></script>
+  <script src="javascript/copyrightDate.js"></script>
 
-    <section class="tagline-container">
-        <div class="icon-container">
-            <img id="habitat-icon" src="assets/app-icon.png" alt="Habitat App Icon">
-        </div>
-        <div class="tagline">
-            <p>The all in one solution to rental</p>
-            <p><span class="bold">maintenance</span> & <span class="bold">communication</span></p>
-        </div>
-    </section>
-    <section class="download-container">
-        <div class="download" href="#" target="_blank" rel="nofollow noopener">
-            Download coming soon!
-        </div>
-    </section>
-    <footer>
-        <p>&copy Ebrisoft <span id="copyrightYear">2020</span></p>
-    </footer>
-    <script>
-        let mainNav = document.getElementById('js-menu');
-        let navBarToggle = document.getElementById('js-navbar-toggle');
+</head>
 
-        navBarToggle.addEventListener('click', function () {
-          mainNav.classList.toggle('active');
-        });
+<body>
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fa fa-bars"></i>
+    </span>
+    <a href="#" class="logo">HABITAT</a>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a class="nav-links active-nav" href="http://habitat.ebrisoft.com/">Home</a>
+      </li>
+      <li>
+        <a class="nav-links" href="pages/details.html">Details</a>
+      </li>
+      <li>
+        <a class="nav-links" href="pages/motivations.html">Motivations</a>
+      </li>
+      <li>
+        <a id="press-kit-link" target="_blank" class="nav-links" href="pages/presskit.html">Press Kit<img
+            id="external-link-icon" src="assets/external-link.svg" alt=""></a>
+      </li>
+    </ul>
+  </nav>
 
-        switchText();
-        setInterval(switchText, 3000);
+  <section class="tagline-container">
+    <div class="icon-container">
+      <img id="habitat-icon" src="assets/app-icon.png" alt="Habitat App Icon">
+    </div>
+    <div class="tagline">
+      <p>The all in one solution to rental</p>
+      <p><span class="bold">maintenance</span> & <span class="bold">communication</span></p>
+    </div>
+  </section>
+  <section class="download-container">
+    <div class="download" href="#" target="_blank" rel="nofollow noopener">
+      Download coming soon!
+    </div>
+  </section>
+  <footer>
+    <p>&copy Ebrisoft <span id="copyrightYear">2020</span></p>
+  </footer>
+  <script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
 
-        setYear();
-    </script>
-  </body>
+    navBarToggle.addEventListener('click', function () {
+      mainNav.classList.toggle('active');
+    });
+
+    switchText();
+    setInterval(switchText, 3000);
+
+    setYear();
+  </script>
+</body>
+
 </html>
