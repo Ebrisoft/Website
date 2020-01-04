@@ -60,30 +60,26 @@ body {
     transform: scaleX(1);
 }
 
+.main-nav li {
+    text-align: right;
+    margin: 15px 30px 15px 0;
+}
+
 .logo {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
     letter-spacing: 4px;
-}
-
-.main-nav li {
-    text-align: center;
-    margin: 15px auto;
-}
-
-
-
-.logo {
     display: inline-block;
-    font-size: 22px;
+    font-size: 2rem;
     margin-top: 10px;
     margin-left: 20px;
 }
 
 .navbar-toggle {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 10vw;
+    margin-right: 20px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);
     font-size: 24px;

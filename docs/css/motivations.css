@@ -6,33 +6,40 @@
     text-align: center;
 }
 
-.border-right {
-    border-right: 1px solid white;
-}
-
 .motivations {
-    height: 300px;
+    min-height: 300px;
     max-width: 1300px;
     display: flex;
     margin: 0 auto;
     text-align: center;
     justify-content: center;
-    align-items: baseline;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .paper {
     flex-grow: 1;
     height: 150px;
-    max-width: 200px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    max-width: 350px;
+    min-width: 180px;
+    padding: 0 20px;
+    display: inline-block;
+    text-align: center;
 }
 
-.paper+.paper {
-    margin-left: 2%;
+.paper h3 {
+    padding:0;
+    margin:0;
+}
+
+.paper p {
+    padding: 0;
+    margin:0;
+}
+
+.left-align {
+    display: inline-block;
+    text-align: left;
 }
 
 .paper a {
