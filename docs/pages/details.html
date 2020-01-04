@@ -38,6 +38,31 @@
     <section>
         <div class="heading">
             <h2>Why Use Habitat?</h2>
+            <p>
+                Habitat provides a mobile communication platform for landlords and tenants,
+                particularly during a multiple occupancy tenancy.
+            </p>
+            <div class="tab">
+                <button class="tablinks active" onclick="openTab(event, 'maintenance-feed')">Maintenace Feed</button>
+                <button class="tablinks" onclick="openTab(event, 'house-pinboard')">House Pinboard</button>
+                <button class="tablinks" onclick="openTab(event, 'one-click-contact')">One-Click Contact</button>
+            </div>
+
+            <div id="maintenance-feed" style="display: block;" class="tabcontent">
+                <h3>Maintenance Feed</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="house-pinboard" class="tabcontent">
+                <h3>House Pinboard</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="one-click-contact" class="tabcontent">
+                <h3>One-Click Contact</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
         </div>
         <div class="stakeholder-values">
             <div class="values landlords">
@@ -119,6 +144,23 @@
         navBarToggle.addEventListener('click', function () {
           mainNav.classList.toggle('active');
         });
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
   </body>
 </html>
