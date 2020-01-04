@@ -225,3 +225,15 @@ footer {
         margin-right: 0;
     }
 }
+
+#press-kit-link {
+    min-width: 100px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#external-link-icon {
+    max-height: 15px;
+    max-width: 15px;
+}
