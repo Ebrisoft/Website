@@ -105,6 +105,7 @@
 
 .accordion {
     font-size: 1.4rem;
+    color: white;
     background-color: transparent;
     cursor: pointer;
     padding: 18px;
@@ -142,43 +143,52 @@
     transition: max-height 0.2s ease-out;
 }
 
+.panel p {
+    margin: 10px 0;
+}
+
+.tabbed-details {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 /* Style the tab */
 .tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: transparent;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 50px auto 20px auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto 0 auto;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: white;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  text-decoration: underline;
+    background: rgba(255,255,255,0.3);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  text-decoration: underline;
+    background: rgba(255,255,255,0.3);
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border-top: none;
+    padding: 2px 12px 6px 12px;
 }
