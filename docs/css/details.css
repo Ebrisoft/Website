@@ -1,0 +1,141 @@
+.stakeholder-values {
+    width: 80%;
+    max-width: 1300px;
+    height: 100%;
+    margin: 0 auto 100px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#tenant-key {
+    position: absolute;
+
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%)
+                       rotate(-45deg)
+                       scale(1.2);
+
+    -ms-transform: translate(-50%, -50%)
+                   rotate(-45deg)
+                   scale(1.2);
+
+    transform: translate(-50%, -50%)
+               rotate(-45deg)
+               scale(1.2);
+
+    z-index: -1;
+    max-height: 300px;
+    max-width: 300px;
+
+}
+
+#landlord-screwdriver {
+    position: absolute;
+
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.value-icon {
+    width: 100%;
+}
+
+.values {
+    position: relative;
+    flex: 1;
+    min-width: 36%;
+    padding: 40px;
+    color: #131313;
+    margin: 0 25px;
+}
+
+.values h3 {
+    padding: 0;
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.values h4 {
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+@media(max-width: 1160px) {
+    nav {
+        margin-bottom: 30px;
+    }
+    .stakeholder-values {
+        flex-direction: column;
+    }
+    .values {
+        padding: 0;
+        margin: 10px;
+    }
+
+    .value-icon {
+        margin-top: 90px;
+    }
+
+    #tenant-key {
+        max-height: 200px;
+        max-width: 200px;
+
+    }
+
+    #landlord-screwdriver {
+        max-height: 200px;
+        max-width: 200px;
+    }
+}
+
+.accordion {
+    font-size: 1.4rem;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #434343;
+    border-bottom: 1px solid #434343;
+    margin-top: -1px;
+    margin-left: -1px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion::after {
+    content: "+";
+    position: absolute;
+    left: 85%;
+}
+
+.active, .accordion:hover {
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.active::after {
+    content: "-";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgba(255,255,255, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

@@ -7,7 +7,8 @@
     <title>Habitat</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/details.css">
 
     <script src="../javascript/copyrightDate.js"></script>
 
@@ -21,19 +22,92 @@
             <div class="nav-item">
                 <a href="../index.html">Home</a>
             </div>
-            <div class="nav-item">
-                <a href="http://habitat.ebrisoft.com/details">Details</a>
+            <div class="nav-item active-nav">
+                <a href="./details.html">Details</a>
             </div>
             <div class="nav-item">
-                <a href="http://habitat.ebrisoft.com/motivation">Motivations</a>
+                <a href="./motivations.html">Motivations</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Press Kit</a>
             </div>
         </div>
     </nav>
+    <section>
+        <div class="stakeholder-values">
+            <div class="values tenants">
+                <div class="value-icon">
+                    <img id="tenant-key" src="../assets/key.svg">
+                </div>
+                <h3>For Tenants</h3>
+                <button class="accordion">Rent with Confidence</button>
+                <div class="panel">
+                    <p>
+                        Habitat provides a peace of mind that you have dedicated
+                        channels of communication with your landlord and maintenance
+                        staff.
+                    </p>
+                </div>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <div class="values landlords">
+                <div class="value-icon">
+                    <img id="landlord-screwdriver" src="../assets/screwdriver.svg">
+                </div>
+                <h3>For Landlords</h3>
+                <button class="accordion">Seamless Issue Management</button>
+                <div class="panel">
+                    <p>
+                        Easily access all of your current property maintenance issues
+                        in one feed, ranked by priority - allowing you to easily plan
+                        your tasks.
+                    </p>
+                </div>
+
+                <button class="accordion">Effortless Visibility</button>
+                <div class="panel">
+                    <p>
+                        View all of your houses, issues & tenants all in one place.
+                    </p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <footer>
         <p>&copy Ebrisoft <span id="copyrightYear">2020</span></p>
     </footer>
     <script>
         setYear();
+
+        let acc = document.getElementsByClassName("accordion");
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
     </script>
   </body>
 </html>

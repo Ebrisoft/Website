@@ -38,6 +38,7 @@ h3 {
 nav .links {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     font-size: 1.2rem;
 }
@@ -72,7 +73,13 @@ nav .links .nav-item a:hover {
     color: white;
 }
 
-a:hover:before {
+nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.active-nav a:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -133,6 +140,21 @@ a:hover:before {
 
 .download-container {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.download {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: grey;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
 }
 
 footer {
