@@ -55,7 +55,7 @@
     min-width: 36%;
     padding: 40px;
     color: #131313;
-    margin: 0 25px;
+    margin: 100px 25px 0 25px;
 }
 
 .values h3 {
@@ -124,11 +124,11 @@
     left: 85%;
 }
 
-.active, .accordion:hover {
+.accordion.active, .accordion:hover {
     background-color: rgba(255,255,255, 0.3);
 }
 
-.active::after {
+.accordion.active::after {
     content: "-";
 }
 
