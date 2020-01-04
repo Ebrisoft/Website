@@ -9,6 +9,10 @@
   font-weight: 300;
 }
 
+#factsheet-heading {
+  margin-bottom: 10px;
+}
+
 .main-content {
   display: flex;
   flex-direction: row;
