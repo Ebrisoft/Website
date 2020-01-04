@@ -8,6 +8,7 @@
 /* Style the tab */
 .tab {
     overflow: hidden;
+    max-width: 490px;
     border: 1px solid #ccc;
     background-color: transparent;
     border-radius: 10px;
@@ -43,6 +44,28 @@
 .tabcontent {
     display: none;
     padding: 2px 12px 6px 12px;
+}
+
+.tab-display {
+  display: flex;
+}
+
+.app-images {
+  width: 100%;
+  max-width: 900px;
+  margin: 80px auto 20px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.app-images img {
+  max-height: 400px;
+  margin: 20px 0;
+  border: 1px solid white;
+  box-shadow: 5px 5px 8px #000;
 }
 
 .stakeholder-values {
