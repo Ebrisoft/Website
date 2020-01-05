@@ -1,0 +1,71 @@
+.presskit {
+  width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+#factsheet-heading {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.factsheet {
+  max-width: 200px;
+  padding: 20px;
+  border-right: 1px solid white;
+}
+
+.fact {
+  margin-bottom: 30px;
+}
+
+a {
+  color: white;
+}
+
+.content {
+  margin-bottom: 30px;
+}
+
+.text-body {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.screenshot {
+  max-height: 300px;
+  border: 1px solid black;
+  margin-right: 7px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  max-height: 100px;
+}
